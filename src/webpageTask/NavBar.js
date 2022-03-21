@@ -47,7 +47,7 @@ const NavBar = () => {
                 <h4>Add guest</h4>
               </div>
               <div className="first_div">
-                <h4><button type="button" id="search_Button">Search</button></h4>
+                <h4><i class="fa fa-search" aria-hidden="true"></i>Search</h4>
               </div>
             </div>
           </div>

@@ -34,13 +34,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 80%;
-  background-color: rgb(231, 242, 253);
+  background-color: rgb(255, 255, 255);
   opacity: 0.7;
   border-radius: 20px;
   margin-bottom: 20px;
 }
 .first_div{
-  background-image: linear-gradient(to bottom right, red, yellow);
+  /* background-image: linear-gradient(to bottom right, red, yellow); */
+  background-color:rgb(226, 217, 181);
   color: black;
   padding: 0px 20px;
   margin-top: 10px;
@@ -52,12 +53,19 @@ body {
 }
 .first_div:hover{
     transform: scale(1.1);
+    background-image: linear-gradient(to bottom right, red, yellow);
+    color:#fff;
 }
 #search_Button{
     background-image: linear-gradient(to bottom right, red, yellow);
     border: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
+}
+#search_Button:hover{
+    color:white;
+
+    
 }
 .logo_name {
   color: #fff;
