@@ -50,6 +50,9 @@ body {
   border-radius: 20px;
   color: black;
 }
+.first_div:hover{
+    transform: scale(1.1);
+}
 #search_Button{
     background-image: linear-gradient(to bottom right, red, yellow);
     border: none;

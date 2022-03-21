@@ -13,7 +13,7 @@ const Task = () => {
                         <img src="https://img.freepik.com/free-photo/3d-rendering-modern-dining-room-living-room-with-luxury-decor_105762-2000.jpg?size=626&ext=jpg&ga=GA1.2.1168831157.1644922700" />
                         <div className="postion">
                             <div className="first_content">
-                                <h3>room with one king size bed</h3>
+                                <h3>Room with one king size bed</h3>
                                 <div className="price">
                                     <h5 className="tag_line">2205$</h5>
                                     <h5 className="tag_line">345K</h5>
