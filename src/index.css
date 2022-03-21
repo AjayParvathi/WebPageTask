@@ -1,13 +1,446 @@
+
+/* task */
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Kaushan+Script&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap");
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: -20px;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* nav bar */
+* {
+  box-sizing: border-box;
 }
+.home {
+  margin-top: 0px;
+  background-image: url(https://img.freepik.com/free-photo/dark-blue-living-room-interior-with-cozy-luxury-leather-armchair-3d-rendering_41470-4244.jpg?w=900);
+  /* background-image: url(https://img.freepik.com/free-photo/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering_41470-3585.jpg?t=st=1647713809~exp=1647714409~hmac=87c8afb7853a318b31385eae4c7906f3a86c2708b887b50dc5b20a3b0e20698b&w=740); */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.home_content {
+  text-align: center;
+  margin-top: 120px;
+}
+.div_container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  background-color: rgb(231, 242, 253);
+  opacity: 0.7;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.first_div{
+  background-image: linear-gradient(to bottom right, red, yellow);
+  color: black;
+  padding: 0px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  color: black;
+}
+#search_Button{
+    background-image: linear-gradient(to bottom right, red, yellow);
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.logo_name {
+  color: #fff;
+  font-family: "Kaushan Script", cursive;
+  text-decoration: none;
+  margin-top: 0px;
+}
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+header {
+  height: 100%;
+  width: 100%;
+  float: left;
+  padding: 0 20px;
+  color: #fff;
+}
+.brand-logo {
+  max-width: 200px;
+  float: left;
+  padding: 14px 0px;
+  color: #fff;
+}
+.brand-logo img {
+  max-width: 100%;
+}
+.navigation {
+  margin: 0px;
+  float: right;
+}
+.navigation li {
+  list-style: none;
+  float: left;
+}
+.navigation li a {
+  color: #fff;
+  padding: 28px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+.navigation li a i {
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+.show-menu-btn,
+.hide-menu-btn {
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn {
+  margin: 0px;
+  float: right;
+}
+.show-menu-btn i {
+  line-height: 100px;
+}
+.navigation a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+  color: black;
+}
+#toggle-btn {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+/*-- Responsive CSS --*/
+
+@media screen and (max-width: 867px) {
+  .home {
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+  }
+  .div_container {
+    display: block;
+    padding: 20px;
+  }
+  .first_div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .show-menu-btn,
+  .hide-menu-btn {
+    display: block;
+    float: right;
+  }
+  .navigation {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: rgb(104, 90, 90);
+    top: -100%;
+    left: 0;
+    padding: 50px 0px;
+    transition: 1s;
+    z-index: 2;
+  }
+  .navigation li {
+    width: 100%;
+  }
+  .navigation li a {
+    padding: 15px 15px;
+    text-align: left;
+  }
+  .navigation li a i {
+    width: auto;
+    font-size: 20px;
+  }
+  .hide-menu-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  #toggle-btn:checked ~ nav .navigation {
+    top: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+  }
+}
+
+/* home page */
+
+.home_container {
+  margin-top: 20px;
+}
+.heading {
+  margin-left: 30px;
+  padding-bottom: -300px;
+}
+p {
+  margin-top: -20px;
+}
+.images {
+  display: flex;
+}
+.left {
+  width: 50%;
+  padding: 40px;
+}
+
+.right {
+  width: 50%;
+  padding: 40px;
+}
+.left img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.right img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.postion {
+  display: flex;
+  max-width: 80%;
+  background-color: rgb(225, 229, 233);
+  opacity: 0.8;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  margin-top: -60px;
+  align-items: center;
+  z-index: -2px;
+}
+.first_content {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size:12px;
+}
+.price {
+  display: flex;
+  margin-top: -25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.tag_line {
+  background-image: linear-gradient(to bottom right, red, yellow);
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 20px;
+}
+#button {
+  background-image: linear-gradient(to bottom right, rgb(8, 131, 19), yellow);
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 20px;
+  margin-top: 12px;
+}
+@media screen and (max-width: 800px) {
+  .images {
+    display: block;
+  }
+  .left,
+  .right {
+    width: 100%;
+    padding: 0px 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .left img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+  }
+  .right img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #button {
+    padding: 0px 20px;
+    margin-top: 15px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 310px) {
+  .postion {
+    display: flex;
+    max-width: 100%;
+    background-color: rgb(225, 229, 233);
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-top: 5px;
+    z-index: -2px;
+  }
+  #button {
+    padding: 0px 20px;
+    margin-top:6px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .price {
+    display: block;
+    width: 100%;
+    padding: 0px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  background: #00121b;
+  display: block;
+  margin-top: 20px;
+}
+
+.inner-footer {
+  width: 95%;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.footer-items {
+  width: 30%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.footer-items p {
+  font-size: 14px;
+  text-align: justify;
+  line-height: 25px;
+  color: #fff;
+}
+
+.footer-items h1 {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+ul a{
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+ul a:hover {
+  color: #ff9800;
+}
+
+ul li {
+  margin: 10px 0;
+  height: 25px;
+}
+
+li i {
+  margin-right: 20px;
+}
+
+.social-media {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+}
+
+.social-media a {
+	text-decoration: none;
+}
+
+.social-media i {
+	height: 25px;
+	width: 25px;
+	margin: 20px 10px;
+	padding: 4px;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.social-media i:hover {
+	transform: scale(1.5);
+}
+
+.footer-bottom {
+  padding: 10px;
+  background: #00121b;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* for tablet mode view */
+
+@media screen and (max-width: 1275px) {
+  .footer-items {
+    width: 50%;
+  }
+}
+
+/* for mobile screen view */
+
+@media screen and (max-width: 660px) {
+    .inner-footer {
+        display: block;
+    }
+  .footer-items {
+    width: 100%;
+  }
+}
+
